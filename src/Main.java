@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class Main {
 
@@ -9,16 +9,16 @@ public class Main {
 
         Employee[] employees = new Employee[10];
 
-        employees[0] = new Employee("Лаптев Андрей Сергеевич", 1, 3_000_000);
+        employees[0] = new Employee("Лаптев Андрей Сергеевич", 1, 300_000);
         employees[1] = new Employee("Факторович Изабелла Евгеньевна", 2, 150_000);
         employees[2] = new Employee("Прохоренкова Элина Алексеевна", 3, 100_000);
         employees[3] = new Employee("Исаева Наталия Анатольевна", 1, 5_000);
         employees[4] = new Employee("Шашилова Елена Бронислововна", 4, 50_000);
         employees[5] = new Employee("Караулова Анна Витальевна", 2, 20_000);
-        employees[6] = new Employee("Савицкая Мария Владимировна", 3, 70_000);
+        employees[6] = new Employee("Савицкая Мария Владимировна", 3, 700_000);
         employees[7] = new Employee("Горбатенко Анна Михайловна", 4, 60_000);
         employees[8] = new Employee("Петров Денис Сергеевич", 5, 50_000);
-        employees[9] = new Employee("Макаров Артём Артёмович", 5, 200_000);
+        employees[9] = new Employee("Макаров Артём Артёмович", 5, 2_000);
 
 
         // Базовая сложность
@@ -103,6 +103,7 @@ public class Main {
         for (int i = 0; i < employees.length; i++) {
             if (employees[i].getSalaryEmployees() < min) {
                 number = i;
+                min = employees[i].getSalaryEmployees();
             }
         }
 
