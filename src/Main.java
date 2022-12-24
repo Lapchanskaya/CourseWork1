@@ -32,16 +32,16 @@ public class Main {
         sumSalaryPerMonth(employees);
 
         printSeparation();
-        System.out.println( " Найти сотрудника с максимальной зарплатой.");// этот код работает
+        System.out.println( " Найти сотрудника с максимальной зарплатой.");
        printMaximumSalary(employees);
 
         printSeparation();
-        System.out.println( " Найти сотрудника с минимальной  зарплатой."); // не понимаю как сделать, чтобы он работал корректно
+        System.out.println( " Найти сотрудника с минимальной  зарплатой.");
         printMinimumSalary(employees);
 
 
         printSeparation();
-        System.out.println( " Минимальная и максимальная зарплата .");  // вот этот метод считает максимальную и минимальную сумму корректно
+        System.out.println( " Минимальная и максимальная зарплата .");
         printMaximumAndMinimumSalary(employees);
 
 
