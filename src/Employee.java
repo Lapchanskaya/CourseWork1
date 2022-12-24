@@ -4,7 +4,7 @@ public class Employee {
 
 
     private String fullNameOfEmployees;
-    private double salaryEmployees;
+    private int salaryEmployees;
     private int id = 0;
     private int departments;
 
@@ -12,7 +12,7 @@ public class Employee {
 
 
 
-    public Employee(String fullNameOfEmployees, int departments, double salaryEmployees) {
+    public Employee(String fullNameOfEmployees, int departments, int salaryEmployees) {
         this.fullNameOfEmployees = fullNameOfEmployees;
         this.departments = departments;
         this.salaryEmployees = salaryEmployees;
@@ -25,11 +25,11 @@ public class Employee {
     }
 
 
-    public double getSalaryEmployees() {
+    public int getSalaryEmployees() {
         return this.salaryEmployees;
     }
 
-    public void setSalaryEmployees(double salaryEmployees) {
+    public void setSalaryEmployees() {
         this.salaryEmployees = salaryEmployees;
     }
 
